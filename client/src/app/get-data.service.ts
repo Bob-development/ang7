@@ -28,4 +28,18 @@ export class GetDataService {
   public getBlog(){
     return this.blog;
   }
+
+  public sendNewPost(newPost: object) {
+    return this.httpClient.post('http://localhost:3000/posts', newPost)
+    .subscribe((res) => {
+      console.log(res);
+    });
+  }
+
+  public sendNewBlog(newBlog: object) {
+    return this.httpClient.post('http://localhost:3000/blog', newBlog)
+    .subscribe((res) => {
+      console.log(res);
+    });
+  }
 }

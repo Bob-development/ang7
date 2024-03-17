@@ -1,0 +1,15 @@
+<div class="form-wrapper">
+    <form #form="ngForm" class="form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Post Titlle</mat-label>
+          <input name="label" ngModel matInput>
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <mat-label>Post Description</mat-label>
+          <textarea name="description" ngModel matInput></textarea>
+        </mat-form-field>
+
+        <button routerLink="" (click)="publishNewPost(form.value)" type="button" mat-raised-button color="accent" class="postBtn">Add new Post</button>
+    </form>
+</div>

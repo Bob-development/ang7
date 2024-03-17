@@ -27,6 +27,11 @@ async function getBlog(req, res){
     }
 }
 
+function addBlog(req, res){
+    blog.push(req.body);
+}
+
 module.exports = {
-    getBlog
+    getBlog,
+    addBlog
 }

@@ -24,6 +24,11 @@ async function getPosts(req, res){
     }
 }
 
+function addPost(req, res){
+    posts.push(req.body);
+}
+
 module.exports = {
-    getPosts
+    getPosts,
+    addPost
 }

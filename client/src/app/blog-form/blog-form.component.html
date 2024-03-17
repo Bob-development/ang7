@@ -1,0 +1,14 @@
+<div class="form-wrapper">
+    <form #form="ngForm" class="form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Blog Titlle</mat-label>
+          <input name="title" ngModel matInput>
+        </mat-form-field>
+
+        <section class="example-section">
+            <mat-checkbox name="isRead" ngModel class="example-margin">Is Read</mat-checkbox>
+        </section>
+
+        <button routerLink="" (click)="publishNewBlog(form.value)" type="button" mat-raised-button color="accent" class="postBtn">Add new Blog</button>
+    </form>
+</div>

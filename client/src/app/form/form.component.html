@@ -1,0 +1,33 @@
+<div class="data-wrapper">
+    <div class="posts-warpper">
+        <div class="title">Posts</div>
+
+        <div class="posts">
+            <div *ngFor="let post of getDataService.getPosts()" class="post">
+                <div>
+                    Label: {{post.label}}
+                </div>
+
+                <div>
+                    Description: {{post.description}}
+                </div>
+            </div>
+        </div>
+
+        <button routerLink="PostForm" mat-raised-button color="accent" class="postBtn">Make new Post</button>
+    </div>
+
+    <div class="blog">
+        <div class="title">Blog</div>
+
+        <div class="blogs">
+            <div *ngFor="let blog of getDataService.getBlog()" class="blog">
+                <div>
+                    Title: {{blog.title}}
+                </div>
+            </div>
+        </div>
+
+        <button routerLink="BlogForm" mat-raised-button color="accent" class="postBtn">Make new Blog</button>
+    </div>
+</div>

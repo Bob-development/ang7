@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { GetDataService } from './get-data.service';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +7,6 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
 
-  constructor(
-    public getDataService: GetDataService,
-    private httpClient: HttpClient
-  ){}
+  constructor(){}
 
 }
